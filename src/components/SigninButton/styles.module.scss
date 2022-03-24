@@ -1,0 +1,38 @@
+.Container {
+  background-color: var(--Black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+}
+
+.ButtonGit {
+  height: 2.5rem;
+  border-radius: 2.5rem;
+  background: var(--gray-800);
+  padding: 0 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 200ms ease-in;
+  border: 0;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:hover .svg {
+    opacity: 0.8;
+  }
+  .svg {
+    font-size: 1.6rem;
+    color: var(--yellow-500);
+  }
+  .closeIcon {
+    margin-left: 1rem;
+  }
+
+  a {
+    margin-left: 0.5rem;
+    color: var(--White);
+  }
+}

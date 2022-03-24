@@ -1,0 +1,55 @@
+.Container {
+  height: 5rem;
+  background-color: var(--black-500);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  color: var(--white);
+}
+
+.LogoMain {
+  height: 4rem;
+  width: auto;
+}
+
+.Nav {
+  margin-left: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  a {
+    display: inline-block;
+    position: relative;
+    padding: 0 0.5rem;
+    line-height: 5rem;
+    color: var(--white);
+    transition: transform 200ms ease-in;
+    & + a {
+      margin-left: 1.5rem;
+    }
+    &:hover {
+      color: var(--cyan-500);
+      opacity: 0.8;
+    }
+    &.active {
+      color: var(--cyan-500);
+    }
+
+    &.active::after {
+      content: '';
+      height: 3px;
+      border-radius: 3px 3px 0 0;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: var(--yellow-500);
+      bottom: 1px;
+    }
+  }
+}
+
+.ButtonHeader {
+  margin-left: auto;
+  margin-right: 5rem;
+}
