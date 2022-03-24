@@ -9,7 +9,7 @@ export default function Home() {
       <Head>StarWarsApp</Head>
       <main className={styles.contentContainer}>
         <section className={styles.hero}>
-          <span> 👋 Hey, welcome </span>
+          <span> 🖖 Hey, welcome </span>
           <h1>
             New about the
             <span> Stars Wars</span> world.
@@ -21,10 +21,10 @@ export default function Home() {
         </section>
         <Image
           className={styles.AvatarMain}
-          src="/images/avatar.png"
+          src="/images/bg7.jpg"
           alt="Girl coding"
-          height={'520px'}
-          width={'334px'}
+          height={'680px'}
+          width={'900px'}
         />
       </main>
     </>
